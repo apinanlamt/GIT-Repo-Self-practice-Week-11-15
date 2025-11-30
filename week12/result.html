@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <link rel="stylesheet" href="mask.css">
+</head>
+<body>
+
+  <h2>ผลลัพธ์</h2>
+
+  <p><strong>เบอร์โทร:</strong> <span id="showPhone"></span></p>
+  <p><strong>บัตรประชาชน:</strong> <span id="showId"></span></p>
+
+  <br>
+  <a href="index.html">กลับไปหน้าเดิม</a>
+
+  <script>
+    const url = new URL(window.location.href);
+    document.querySelector("#showPhone").textContent = url.searchParams.get("phone");
+    document.querySelector("#showId").textContent = url.searchParams.get("idcard");
+  </script>
+
+</body>
+</html>

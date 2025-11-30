@@ -1,0 +1,31 @@
+body {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+#addForm {
+  margin-bottom: 20px;
+}
+
+#newItemText {
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 14px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #fafafa;
+}
+
+.item p {
+  display: inline-block;
+  width: 200px;
+}
